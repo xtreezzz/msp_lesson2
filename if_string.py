@@ -2,14 +2,13 @@ def string_checker(_s1, _s2):
     if isinstance(_s1, str) and isinstance(_s2, str):
         if _s1 == _s2:
             return 1
+        elif len(_s1) > len(_s2):
+            return 2
+        elif _s2 == 'learn':
+            return 3
         else:
-            if len(_s1) > len(_s2):
-                return 2
-            elif _s2 == 'learn':
-                return 3
-            else:
-               # Недостоющиее условие
-                return 4
+            # Недостоющиее условие
+            return 4
     else:
         return 0
 
