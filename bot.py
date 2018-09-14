@@ -44,7 +44,7 @@ def planet_detector(bot, update):
         update.message.reply_text(f'Planet: {planet_name.name} in constellation: {constellation[1]}')
     except Exception as err:
         print(f'{get_now()} Error {err}')
-        x = [name for id, type, name in ephem._libastro.builtin_planets() if type == 'Planet' and name not in ('Sun','Moon')]
+        x = [name for id, type, name in ephem._libastro.builtin_planets() if type == 'Planet' and name not in ('Sun', 'Moon')]
         all_planet_list = '\n/planet '.join(x)
         update.message.reply_text(f'Choose one of this planet:\n/planet {all_planet_list}')
 
