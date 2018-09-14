@@ -16,7 +16,6 @@ def string_checker(_s1, _s2):
 s1 = input('Строчка 1 ')
 s2 = input('Строчка 2 ')
 
-
 output_result = string_checker(s1, s2)
 
 print(output_result)
